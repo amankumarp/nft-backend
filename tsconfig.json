@@ -1,11 +1,14 @@
 {
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
+    "target": "es6",
+    "sourceMap": true,
+    "module": "Node16",
     "rootDir": ".",
     "outDir": "build"
   },
   "include": [
-    "router/**/*.ts",
+    "**/*.ts",
     "test/**/*.ts"
   ]
 }
